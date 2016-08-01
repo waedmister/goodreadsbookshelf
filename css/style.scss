@@ -11,8 +11,8 @@ header {
 }
 
 nav {
+  display: inline-block;
   padding: 10px 0 0 40px;
-
 }
 
 ul {
@@ -34,8 +34,6 @@ a {
   border-right: none;
 }
 }
-
-
 
 div {
   display: inline-block;
@@ -126,15 +124,15 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
 }
-.bookcovertop {
+.bookcovertop, .bookcovertopfirst {
   height: 250px;
   margin: 0 25px;
-  border-right: 25px solid $brown;
+  // border-right: 25px solid $brown;
 }
-.bookcoverbottom {
+.bookcoverbottom, .bookcoverbottomfirst {
   height: 250px;
   margin: 50px 25px 0 25px;
-  border-right: 25px solid $brown;
+ // border-right: 25px solid $brown;
 }
 
 .books {
@@ -151,3 +149,5 @@ footer {
   background-size: cover;
   border: 1px solid #503b2b;
 }
+
+@import "mediaqueries.scss";
